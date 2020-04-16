@@ -1,0 +1,9 @@
+C:\Users\Asus\source\repos\Bills\Bills\bin\Debug\Bills.exe.config
+C:\Users\Asus\source\repos\Bills\Bills\bin\Debug\Bills.exe
+C:\Users\Asus\source\repos\Bills\Bills\bin\Debug\Bills.pdb
+C:\Users\Asus\source\repos\Bills\Bills\obj\Debug\Bills.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Bills\Bills\obj\Debug\Bills.Form1.resources
+C:\Users\Asus\source\repos\Bills\Bills\obj\Debug\Bills.Properties.Resources.resources
+C:\Users\Asus\source\repos\Bills\Bills\obj\Debug\Bills.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\Bills\Bills\obj\Debug\Bills.exe
+C:\Users\Asus\source\repos\Bills\Bills\obj\Debug\Bills.pdb
