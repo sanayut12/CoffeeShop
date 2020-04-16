@@ -29,7 +29,14 @@ namespace สมัครสมาชิก
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+ 
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
         }
     }
 }

@@ -8,3 +8,4 @@ C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิ�
 C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csproj.CoreCompileInputs.cache
 C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.exe
 C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.pdb
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form2.resources
