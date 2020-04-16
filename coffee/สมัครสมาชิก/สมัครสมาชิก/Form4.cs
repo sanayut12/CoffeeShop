@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace สมัครสมาชิก
 {
-    public partial class Form2 : Form
+    public partial class Form4 : Form
     {
-        public Form2()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
             f3.Show();
@@ -36,8 +26,6 @@ namespace สมัครสมาชิก
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
             this.Hide();
         }
     }
