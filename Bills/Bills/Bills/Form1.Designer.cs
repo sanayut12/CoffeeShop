@@ -45,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(36, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 39);
+            this.label1.Size = new System.Drawing.Size(217, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "หน้ารวมสินค้า (Sale)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -110,7 +110,7 @@
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "หน้ารวมสินค้า";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
