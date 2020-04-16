@@ -1,0 +1,9 @@
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\bin\Debug\Bills2.exe.config
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\bin\Debug\Bills2.exe
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\bin\Debug\Bills2.pdb
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\obj\Debug\Bills2.csprojAssemblyReference.cache
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\obj\Debug\Bills2.Form1.resources
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\obj\Debug\Bills2.Properties.Resources.resources
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\obj\Debug\Bills2.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\obj\Debug\Bills2.exe
+C:\Users\Asus\OneDrive\เดสก์ท็อป\Project 2\Bills2\Bills2\obj\Debug\Bills2.pdb
