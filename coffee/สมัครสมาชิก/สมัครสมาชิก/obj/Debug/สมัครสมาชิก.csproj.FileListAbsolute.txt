@@ -1,0 +1,10 @@
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\สมัครสมาชิก.exe.config
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\สมัครสมาชิก.exe
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\สมัครสมาชิก.pdb
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csprojAssemblyReference.cache
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form1.resources
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Properties.Resources.resources
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csproj.GenerateResource.cache
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csproj.CoreCompileInputs.cache
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.exe
+C:\Users\Ploii\Desktop\ptoject\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.pdb
