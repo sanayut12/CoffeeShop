@@ -1,0 +1,20 @@
+.App {
+    text-align: left;
+    height: 200;
+    width: 200;
+  }
+  .App1 {
+    background-color: blue;
+    color: cornsilk;
+  }
+  .App2 {
+    text-align: left;
+    display: table-column;
+    flex-direction: contain;
+  }
+
+
+.textinput{
+    align-items: center;
+}
+

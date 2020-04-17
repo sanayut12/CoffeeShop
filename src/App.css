@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: rgb(231, 158, 63);
+}
+.App2 {
+  text-align: center;
+  background-size: cover;
 }
 
 .App-logo {
@@ -38,16 +43,21 @@
 }
 
 .Jumbotron {
-  /* background-color: #61dafb; */
   background-image: url("https://image.freepik.com/free-photo/closeup-coffee-machine_53876-42967.jpg");
-  align-items: 0,0;
-  justify-content: center;
-  display: flex;
-  background-size: cover;
-  background-color: #282c34;
-  min-height: 10vh;
   flex-direction: column;
-  
+  justify-content: center;
+  max-height:50vh;
+  /* max-width:auto; */
+  background-size: cover;
+}
+.divimage{
+  overflow: hidden;
+  height: auto;
+  justify-content: center;
+  background-size: auto;
+  align-items: center;
+  max-height:50vh;
+  max-width:auto;
 }
 
 .h1  {
@@ -63,3 +73,22 @@
 .col{
   background-color: rgb(59, 59, 59);
 }
+
+.col2{
+  background-color: blue;
+  background-size: contain;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+/* .images{
+  background-image: url("https://i.pinimg.com/originals/1a/3c/67/1a3c67417463a2af477a3c54d80af078.jpg");
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-size: cover;
+  background-color: #282c34;
+  min-height: 100vh;
+  flex-direction: column;
+} */
