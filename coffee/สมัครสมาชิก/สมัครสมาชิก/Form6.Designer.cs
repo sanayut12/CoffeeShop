@@ -62,9 +62,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("DilleniaUPC", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(301, 46);
+            this.button1.Location = new System.Drawing.Point(329, 46);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 63);
+            this.button1.Size = new System.Drawing.Size(207, 63);
             this.button1.TabIndex = 14;
             this.button1.Text = "สรุปยอดคำสั่งซื้อ";
             this.button1.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("DilleniaUPC", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(519, 46);
+            this.button2.Location = new System.Drawing.Point(594, 46);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 63);
             this.button2.TabIndex = 15;
@@ -83,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 640);
+            this.ClientSize = new System.Drawing.Size(1176, 719);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox4);

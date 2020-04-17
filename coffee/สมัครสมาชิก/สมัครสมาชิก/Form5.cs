@@ -26,7 +26,9 @@ namespace สมัครสมาชิก
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
         }
     }
 }
