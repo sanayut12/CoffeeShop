@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-//const db = require('./connectdb/db')
+
 import Swal from 'sweetalert2';
 import axios from 'axios'
 
+// import con from "./databasemodule/db"
+
+// con.connect()
+
+
+console.log("dfdlfpdlpf")
 
 export default class Register extends Component {
-    
+
     state={
         name:"",
         password:"",
         gender:"Male",
         phone:""
+    }
+
+    componentDidMount(){
+        fetch("https://0fc12966.ngrok.io/register")
     }
 
     onChangeName=e=>{
