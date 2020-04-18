@@ -24,9 +24,35 @@ db.connect((err) =>{
 db.end() 
 
 
-app.get("/register",()=>{
-    console.log("jdojojs")
+app.use(express.static('public'))
+app.use(express.json({limit:'1mb'}))
+
+// app.post("/register",(req,res)=>{
+//     console.log("I got request")
+//     console.log(req.body)
+//     const data = req.body
+//     res.json({
+//         status: "success",
+//         name: data.name,
+//         no: data.no
+
+//     })
+// })
+
+
+app.post("/register",(request,response)=>{
+    console.log("resive post method")
+    console.log(request.body)
+    const data=request.body
+    response.json({
+        status:"success",
+        name : data.name,
+        pass : data.pass
+    })
+
+    //res.send("data")
 })
+
 
 
 app.listen(4000,()=>{console.log("server start")})

@@ -44,13 +44,7 @@ class App extends Component{
     return (
       <div className="App">
 
-        <div>        
-        <div >
-          <Jumbotron className = 'Jumbotron'>
-              <h1><Badge>Coffee Home </Badge></h1>
-              <p> <center><h3 className="h3">บริการสั่งอาหารแบบ online</h3></center>  </p>
-          </Jumbotron>
-        </div>
+        <div> 
         <div>
             <ButtonGroup className="col2">
                   <Link to='./menu'><Button color="primary">Menu</Button></Link>
@@ -60,7 +54,14 @@ class App extends Component{
                   <Link to='./register'><Button color="primary">Register</Button></Link>
                   <Link to='./login'><Button color="primary" onClick={this.onNameChange}>{this.state.status}</Button></Link>
             </ButtonGroup>
-          </div>
+          </div>       
+        <div >
+          <Jumbotron className = 'Jumbotron'>
+              <h1><Badge>Coffee Home </Badge></h1>
+              <p> <center><h3 className="h3">บริการสั่งอาหารแบบ online</h3></center>  </p>
+          </Jumbotron>
+        </div>
+
         </div>
         <div className = "images">  
           

@@ -3,13 +3,7 @@ import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 import Swal from 'sweetalert2';
 import axios from 'axios'
-
-// import con from "./databasemodule/db"
-
-// con.connect()
-
-
-console.log("dfdlfpdlpf")
+const fetch = require('node-fetch')
 
 export default class Register extends Component {
 
@@ -20,8 +14,28 @@ export default class Register extends Component {
         phone:""
     }
 
+    //  async post(){
+        
+    //     await fetch("https://0fc12966.ngrok.io/register",{
+    //         headers: {'Content-Type': 'application/json'},
+    //           method: "POST",
+    //           body: JSON.stringify(this.data)
+    //     }).then(res => console.log(res) )
+    // }
+
     componentDidMount(){
-        fetch("https://0fc12966.ngrok.io/register")
+        // this.post()
+        console.log("compunanditmout")
+
+        fetch("https://c97b6cf3.ngrok.io/register",{
+            method:"POST",
+            body: {
+                name:"name",
+                pass:"pass"
+            }
+        }).then(response=>{console.log(response)})
+
+        console.log("end.......................")
     }
 
     onChangeName=e=>{
