@@ -1,0 +1,7 @@
+เมนูเย็น
+Ice_Latte ราคา 60 
+Ice_Coffee ราคา 50
+Ice_Mocha ราคา 70
+Ice_Americano ราคา 60
+Ice_Cappuccino ราคา 65
+
