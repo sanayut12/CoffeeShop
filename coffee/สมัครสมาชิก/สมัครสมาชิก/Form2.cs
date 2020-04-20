@@ -73,5 +73,10 @@ namespace สมัครสมาชิก
             f1.Show();
             this.Hide();
         }
+
+        private void textBox_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
