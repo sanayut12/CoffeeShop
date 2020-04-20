@@ -5,37 +5,60 @@ import Swal from 'sweetalert2';
 import axios from 'axios'
 const fetch = require('node-fetch')
 
+const url_api = "https://18774332.ngrok.io/";
+
+
 export default class Register extends Component {
 
-    state={
-        name:"",
-        password:"",
+    state = {
+        name:"dd",
+        password:"ddd",
         gender:"Male",
-        phone:""
+        phone:"00000"
     }
 
-    //  async post(){
+    // async componentDidMount(){
+    //     // this.post()
+    //     console.log("compunanditmout")
+    //     const body = {
+    //         id: 5,
+    //         name: "art",
+    //         type: "series",
+    //         isPublished: true
+    //     };
         
-    //     await fetch("https://0fc12966.ngrok.io/register",{
-    //         headers: {'Content-Type': 'application/json'},
-    //           method: "POST",
-    //           body: JSON.stringify(this.data)
-    //     }).then(res => console.log(res) )
+        
+    //     const result = await fetch(url_api+'register', {
+    //             method: 'post',
+    //             body:    JSON.stringify(body),
+    //             headers: { 'Content-Type': 'application/json' },
+    //         })
+    //         .then(res => res.json())
+    //         .then(json => console.log(json));
+
+    //     console.log("end.......................")
     // }
 
-    componentDidMount(){
-        // this.post()
-        console.log("compunanditmout")
+     onRegister = async() =>{
+        console.log(".......start.........")
 
-        fetch("https://c97b6cf3.ngrok.io/register",{
-            method:"POST",
-            body: {
-                name:"name",
-                pass:"pass"
-            }
-        }).then(response=>{console.log(response)})
+         const body = {
+            name : this.state.name,
+            password : this.state.password,
+            gender : this.state.gender,
+            phone : this.state.phone
+        }
 
-        console.log("end.......................")
+        const result = await fetch(url_api+'registers',{
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: { 'Content-Type': 'application/json' },
+        }).then(res => res.json())
+        .then(json => console.log(json));
+
+        console.log(".......end.........")
+        Swal.fire(this.state.name +" "+ this.state.password+" "+this.state.gender+" "+this.state.phone);
+
     }
 
     onChangeName=e=>{
@@ -105,7 +128,7 @@ ddfdf
                             <Label for="examplePassword">Phone</Label>
                             <Input type="name" name="Phone" placeholder="phone" value={this.state.phone} onChange={this.onChangePhone}/>
                         </FormGroup>
-                        <Button onClick={this.onClick}>Submit</Button>
+                        <Button onClick={this.onRegister}>Register</Button>
                         </Form>
                     
                     </div>

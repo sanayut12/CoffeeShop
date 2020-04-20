@@ -2,25 +2,65 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import Swal from 'sweetalert2';
 
+const url_api = "https://18774332.ngrok.io/";
+
 export default class Login extends Component {
 
     state = {
         name:"none",
-        noUser:0,
-        status: "Login",
-        position:0,
-        noBill:0,
+        password:"",
+        noUser:"",
+        status: "notpass",
+        table:"",
+        noBill:"",
       }
 
-      onNameChange = () => {
-        if(this.state.status==="Login")
-          this.setState({ status: "Logout"});
-        else
-          this.setState({ status: "Login"});
+      onLogin=async()=>{
+        console.log("login on")
+
+        var body = {
+            name:this.state.name,
+            password:this.state.password
+        }
+
+        const result = await fetch(url_api+'login',{
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: { 'Content-Type': 'application/json' },
+        }).then(res => res.json())
+        .then(json => this.setState({status: String(json.status)}));
+        Swal.fire(this.state.status)
+        //Swal.fire(""+this.state.name+" "+this.state.password+" "+this.state.table+"")
+        console.log("finish")
+      }
+
+      onNameChange = e => {
+        this.setState({
+            name:e.target.value
+        })
       };
+      onPasswordChange=e=>{
+          this.setState({
+              password:e.target.value
+            })
+      }
+      onTableChange=e=>{
+        this.setState({
+            table:e.target.value
+        })
+      }
+      onSummit=()=>{
+          var body = {
+            name:this.state.name,
+            password:this.state.password,
+            table:this.state.table,
+          }
+
+          
+      }
 
     render() {
-        if(this.state.status != "Login"){
+        if(this.state.status == "pass"){
             return(
                 <div>
                 Login secces
@@ -37,15 +77,15 @@ export default class Login extends Component {
                     <Form>
                         <FormGroup>
                             <Label for="exampleEmail">name</Label>
-                            <Input type="name" name="name" id="exampleEmail" placeholder="name" />
+                            <Input type="name" name="name" id="exampleEmail" placeholder="name" onChange={this.onNameChange}/>
                         </FormGroup>
                         <FormGroup>
                             <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" id="examplePassword" placeholder="password" />
+                            <Input type="password" name="password" id="examplePassword" placeholder="password" onChange={this.onPasswordChange}/>
                         </FormGroup>
                         <FormGroup>
                             <Label for="exampleSelect">table</Label>
-                            <Input type="select" name="select" id="exampleSelect" placeholder="password">
+                            <Input type="select" name="select" id="exampleSelect" placeholder="password" onChange={this.onTableChange}>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -65,7 +105,7 @@ export default class Login extends Component {
 
                             </Input>
                         </FormGroup>
-                        <Button onClick={this.onNameChange}>Login</Button>
+                        <Button onClick={this.onLogin}>Login</Button>
                     </Form>
                     </div>
                 </div>       
