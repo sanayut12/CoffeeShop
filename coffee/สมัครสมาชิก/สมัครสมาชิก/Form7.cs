@@ -41,7 +41,7 @@ namespace สมัครสมาชิก
             command.Parameters["@ProductName"].Value = textBox_name.Text;
             command.Parameters["@Price"].Value = textBox_price.Text;
             command.Parameters["@Type"].Value = comboBox_type.Text;
-            command.Parameters["@Url"].Value = textBox_url.Text;
+            command.Parameters["@Url"].Value = "https://drive.google.com/uc?id="+textBox_url.Text;
 
 
             if (command.ExecuteNonQuery() == 1)
