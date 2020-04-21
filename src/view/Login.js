@@ -2,18 +2,24 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import Swal from 'sweetalert2';
 
-const url_api = "https://18774332.ngrok.io/";
+const url_api = "https://1193fc89.ngrok.io/";
 
 export default class Login extends Component {
 
     state = {
         name:"none",
         password:"",
-        noUser:"",
-        status: "notpass",
+        status: "Login",
+        //return to page major
+        SaleID:0,
+        SaleDateTime:"",
+        CustomerID:0,
         table:"",
-        noBill:"",
+
       }
+      onStatus = event =>{
+        this.props.onStatusChange(event.target.value)
+    }
 
       onLogin=async()=>{
         console.log("login on")
@@ -49,21 +55,20 @@ export default class Login extends Component {
             table:e.target.value
         })
       }
-      onSummit=()=>{
-          var body = {
-            name:this.state.name,
-            password:this.state.password,
-            table:this.state.table,
-          }
 
-          
-      }
+    //   onSummit=()=>{
+    //       var body = {
+    //         name:this.state.name,
+    //         password:this.state.password,
+    //         table:this.state.table,
+    //       }         
+    //   }
 
     render() {
-        if(this.state.status == "pass"){
+        if(this.state.status == "Logout"){
             return(
                 <div>
-                Login secces
+                Login success!
             </div>
             )
         }
@@ -105,7 +110,7 @@ export default class Login extends Component {
 
                             </Input>
                         </FormGroup>
-                        <Button onClick={this.onLogin}>Login</Button>
+                        <Button onClick={this.onLogin} onNameChange={this.onStatus}>Login</Button>
                     </Form>
                     </div>
                 </div>       

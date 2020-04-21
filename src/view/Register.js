@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 import axios from 'axios'
 const fetch = require('node-fetch')
 
-const url_api = "https://18774332.ngrok.io/";
+const url_api = "https://1193fc89.ngrok.io/";
 
 
 export default class Register extends Component {

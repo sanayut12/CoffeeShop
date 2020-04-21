@@ -149,11 +149,12 @@ app.post('/login',async (req,res)=>{
         console.log(result)
         if(result != false){
             console.log("pass")
-            res.send({status : "pass"})
+            res.send({status : "Logout"})
         }
         else{
             console.log("not pass")
-            res.send({status : "notpass"})
+            res.send({status : "Login"})
+
         }
     });
 
@@ -163,6 +164,23 @@ app.post('/login',async (req,res)=>{
     // res.send(status_login)
 
 })
+
+
+
+app.post('/menu',async(req,res)=>{
+    console.log("menu access!")
+
+    var sql = "SELECT * FROM products";
+    db.query(sql,async function (err, result) {
+        if (err) throw err;
+        console.log("have access menu");
+ 
+        var returnResult = JSON.stringify(result)
+        console.log(returnResult)
+        res.send(returnResult)
+     })
+})
+
 
 
 
