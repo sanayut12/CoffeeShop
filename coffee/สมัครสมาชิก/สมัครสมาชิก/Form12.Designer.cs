@@ -39,7 +39,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(960, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1296, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 44);
             this.pictureBox1.TabIndex = 12;
@@ -48,9 +48,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(47, 65);
+            this.listView1.Location = new System.Drawing.Point(85, 65);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(991, 525);
+            this.listView1.Size = new System.Drawing.Size(1246, 553);
             this.listView1.TabIndex = 13;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -60,7 +60,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1092, 614);
+            this.ClientSize = new System.Drawing.Size(1440, 670);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

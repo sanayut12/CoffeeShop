@@ -47,22 +47,23 @@
             // textBox_name
             // 
             this.textBox_name.AccessibleDescription = "";
+            this.textBox_name.AccessibleName = "dd";
             this.textBox_name.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_name.ForeColor = System.Drawing.Color.Black;
             this.textBox_name.Location = new System.Drawing.Point(696, 207);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(469, 69);
             this.textBox_name.TabIndex = 0;
             this.textBox_name.Tag = "";
-            this.textBox_name.Text = "Name";
             // 
             // textBox_password
             // 
             this.textBox_password.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_password.ForeColor = System.Drawing.Color.Black;
             this.textBox_password.Location = new System.Drawing.Point(696, 313);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.Size = new System.Drawing.Size(469, 69);
             this.textBox_password.TabIndex = 1;
-            this.textBox_password.Text = "Password";
             this.textBox_password.TextChanged += new System.EventHandler(this.textBox_password_TextChanged);
             // 
             // button1
@@ -80,6 +81,7 @@
             // 
             this.textBox_gender.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_gender.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_gender.ForeColor = System.Drawing.Color.Black;
             this.textBox_gender.FormattingEnabled = true;
             this.textBox_gender.Items.AddRange(new object[] {
             "Male",
@@ -88,12 +90,12 @@
             this.textBox_gender.Name = "textBox_gender";
             this.textBox_gender.Size = new System.Drawing.Size(470, 68);
             this.textBox_gender.TabIndex = 9;
-            this.textBox_gender.Text = "Gender";
             // 
             // textBox_level
             // 
             this.textBox_level.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_level.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_level.ForeColor = System.Drawing.Color.Black;
             this.textBox_level.FormattingEnabled = true;
             this.textBox_level.Items.AddRange(new object[] {
             "Staff",
@@ -103,7 +105,6 @@
             this.textBox_level.Name = "textBox_level";
             this.textBox_level.Size = new System.Drawing.Size(469, 68);
             this.textBox_level.TabIndex = 10;
-            this.textBox_level.Text = "Level";
             // 
             // pictureBox1
             // 
@@ -148,7 +149,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(378, 325);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 57);
+            this.label2.Size = new System.Drawing.Size(259, 57);
             this.label2.TabIndex = 18;
             this.label2.Text = "PASSWORD";
             // 
@@ -160,7 +161,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(378, 418);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 57);
+            this.label3.Size = new System.Drawing.Size(192, 57);
             this.label3.TabIndex = 19;
             this.label3.Text = "GENDER";
             // 
@@ -172,12 +173,13 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(378, 523);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 57);
+            this.label4.Size = new System.Drawing.Size(141, 57);
             this.label4.TabIndex = 20;
             this.label4.Text = "LEVEL";
             // 
             // Form2
             // 
+            this.AccessibleDescription = "dd";
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
@@ -198,6 +200,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -207,17 +210,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox_name;
-        private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox textBox_gender;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.ComboBox textBox_level;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox_name;
+        private System.Windows.Forms.TextBox textBox_password;
+        private System.Windows.Forms.ComboBox textBox_gender;
+        public System.Windows.Forms.ComboBox textBox_level;
     }
 }
