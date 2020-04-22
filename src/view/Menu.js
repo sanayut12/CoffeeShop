@@ -1,22 +1,16 @@
 import React, { Component } from 'react'
 import { Jumbotron, Container,Badge ,Button,ButtonGroup,Card, CardImg, CardText, CardBody, CardLink,
-    CardTitle, CardSubtitle, CardGroup, CardDeck} from 'reactstrap';
-
+    CardTitle, CardSubtitle, CardGroup, CardDeck, Row,Col} from 'reactstrap';
+import Swal from 'sweetalert2';
 import './Menu.css'
 
-const url_api = "https://1193fc89.ngrok.io/";
+const url_api = "https://59135ca0.ngrok.io/";
 
 export default class Menu extends Component {
 
     state = {
-        name:"none",
-        password:"",
-        status: "notpass",
-        //return to page major
         SaleID:0,
-        SaleDateTime:"",
         CustomerID:0,
-        table:"",
         resultmenu:[]
       }
 
@@ -31,44 +25,80 @@ export default class Menu extends Component {
         //Swal.fire(this.state.status)
         //Swal.fire(""+this.state.name+" "+this.state.password+" "+this.state.table+"")
         console.log("menu end")
-
+        this.setState({
+            SaleID: this.props.SaleID,
+            CustomerID : this.props.CustomerID
+        })
+        
+        console.log(this.state.resultmenu)
+        
 
     }
+// 
+    onClick = (SaleID,ProductID,Price) => {
 
+        var body = {
+            SaleID : SaleID,
+            ProductID : ProductID,
+            Price : Price
+        }
+
+        fetch(url_api+'buyls',{
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: { 'Content-Type': 'application/json' },
+        })
+        .then(res => res.json())
+        .then(json => Swal.fire("Buyed"));
+    }
 
 
     render() {
         var items =[]
         for(var i = 0 ; i< this.state.resultmenu.length;i++){
+            let saleid = this.state.SaleID
+            let productid = this.state.resultmenu[i]["ProductID"]
+            let price = this.state.resultmenu[i]["Price"]
+
+            console.log(productid)
+
             items.push(
-            
-            <div className = "sqrmenu" >
-            
-                <Card>
-                    <CardBody>              
-                    <CardTitle>{this.state.resultmenu[i]["ProductName"]}</CardTitle>
-                    </CardBody>
-                    <img width="100%" src={this.state.resultmenu[i]["Url"]} alt="Card image cap" />
-                    <CardBody>
-                    <CardText>{"Type : "+this.state.resultmenu[i]["Type"]}</CardText>
-                    <CardText>{"Cost : "+ this.state.resultmenu[i]["Price"] +" ฿"}</CardText>
-                    <Button className = "fontb">Buy</Button>
-                    </CardBody>
-                </Card>
-                 
+            <Col>            
+                <div className = "sqrmenu" >            
+                    <Card>
+                        <CardBody>              
+                        {/* <CardTitle>{this.state.resultmenu[i]["ProductName"]}</CardTitle> */}
+                        </CardBody>
+                        <img width="100%" src={this.state.resultmenu[i]["Url"]} alt="Card image cap" />
+                        <CardBody>
+                        <CardText>{"Type : "+this.state.resultmenu[i]["Type"]}</CardText>
+                        <CardText>{"Cost : "+ this.state.resultmenu[i]["Price"] +" ฿"}</CardText>
+                      {/* this.state.SaleID,this.state.resultmenu[i]["ProductID"],this.state.resultmenu[i]["Price"] */}
+                        <Button className = "fontb" onClick={() => this.onClick(saleid,productid,price)} >Buy</Button>
+                        </CardBody>
+                    </Card>             
                 </div>
-               
+            </Col>               
             
             )
         }
-            //ได้ยินเสียงไหมครับ55
-        
+
         console.log("render")
         console.log(this.state.resultmenu)
         return (
             <div >
-                <div className = "sqr" >
+                <div>
+                    <h1>
+                        Menu Page
+                    </h1>
+                </div>
+                <div>
+                    CustomerId = {this.state.CustomerID} SaleID = {this.state.SaleID}
+                </div>
+                <div className = "sqr">
+                    <Row className = "backgro">
                     {items}
+                    </Row>
                 </div>
             </div>
 

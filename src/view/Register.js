@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText ,Container} from 'reactstrap';
 
 import Swal from 'sweetalert2';
 import axios from 'axios'
 const fetch = require('node-fetch')
 
-const url_api = "https://1193fc89.ngrok.io/";
+const url_api = "https://59135ca0.ngrok.io/";
 
 
 export default class Register extends Component {
@@ -42,7 +42,7 @@ export default class Register extends Component {
      onRegister = async() =>{
         console.log(".......start.........")
 
-         const body = {
+        const body = {
             name : this.state.name,
             password : this.state.password,
             gender : this.state.gender,
@@ -108,29 +108,33 @@ ddfdf
                 <div>
                     Register page
                     <div>
-                    <Form>
-                        <FormGroup>
-                            <Label for="exampleEmail">name</Label>
-                            <Input type="name" placeholder="name" value={this.state.name} onChange={this.onChangeName}/>
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" placeholder="password" value={this.state.password} onChange={this.onChangePassword}/>
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="exampleSelect">Gender</Label>
-                            <Input type="select" name="select" placeholder="gender" value={this.state.gender} onChange={this.onChangeGender}>
-                            <option>Male</option>
-                            <option>Female</option>
-                            </Input>
-                        </FormGroup>
-                        <FormGroup>
-                            <Label for="examplePassword">Phone</Label>
-                            <Input type="name" name="Phone" placeholder="phone" value={this.state.phone} onChange={this.onChangePhone}/>
-                        </FormGroup>
-                        <Button onClick={this.onRegister}>Register</Button>
-                        </Form>
-                    
+                        <Container>
+                            <Form>
+                                <FormGroup>
+                                    <Label for="exampleEmail">name</Label>
+                                    <Input type="name" placeholder="name" value={this.state.name} onChange={this.onChangeName}/>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="examplePassword">Password</Label>
+                                    <Input type="password" name="password" placeholder="password" value={this.state.password} onChange={this.onChangePassword}/>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="exampleSelect">Gender</Label>
+                                    <Input type="select" name="select" placeholder="gender" value={this.state.gender} onChange={this.onChangeGender}>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    </Input>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="examplePassword">Phone</Label>
+                                    <Input type="name" name="Phone" placeholder="phone" value={this.state.phone} onChange={this.onChangePhone}/>
+                                </FormGroup>
+                                <div >
+                                    <Button className= "" onClick={this.onRegister}>Register</Button>
+                                </div>
+                                <div className ="di"></div>
+                            </Form>
+                        </Container>
                     </div>
                 </div>
             )

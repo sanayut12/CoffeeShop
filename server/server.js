@@ -134,34 +134,75 @@ app.post('/registers',(req,res)=>{
 
 app.post('/login',async (req,res)=>{
     console.log("login access")
+
     var data_login = {
         name: req.body.name,
-        password: req.body.password
+        password: req.body.password,
+        table:req.body.table
     }
 
     // var re_bool = await login_database(req.body.name,req.body.password)
     // console.log("return bool "+ re_bool)
     var returnValue;
-    var sql = "SELECT CustomerName,Password FROM customers WHERE CustomerName = '"+data_login.name+"' AND Password = '"+data_login.password+"'";
+    var sql = "SELECT * FROM customers WHERE CustomerName = '"+data_login.name+"' AND Password = '"+data_login.password+"'";
     await db.query(sql,await function (err, result) {
         if (err) throw err;
         console.log("have access 1 user = "+data_login.name);
+        var customerid = result[0]["CustomerID"]
         console.log(result)
+        // console.log(id)
         if(result != false){
+            console.log("table = "+data_login.table)
             console.log("pass")
-            res.send({status : "Logout"})
+            console.log(customerid)
+
+            let ts = Date.now();
+            let date_ob = new Date(ts);
+            let year = date_ob.getFullYear()
+            let month = ("0" + (date_ob.getMonth() + 1)).slice(-2)
+            let date = ("0" + date_ob.getDate()).slice(-2);
+            let hours = date_ob.getHours();
+            let minutes = date_ob.getMinutes();
+            let seconds = date_ob.getSeconds();
+
+            let DateTimeNow = year+"/"+month+"/"+date+";"+hours+":"+minutes+":"+seconds
+
+            console.log("date time")
+            console.log(DateTimeNow)
+
+            //    ,  "+data_login.table+"
+            var sql2 = "INSERT INTO sales (SaleDateTime,CustomerID,No_table) VALUES ('"+DateTimeNow+"',"+result[0]["CustomerID"]+",'"+data_login.table+"')"
+            db.query(sql2,function (err, result) {
+                if (err) throw err;
+                console.log("insert bill name = "+ data_login.name);         
+
+                var sql3 = "SELECT SaleID FROM sales WHERE SaleDateTime = '"+DateTimeNow+"'"
+                db.query(sql3,function (err, result) {
+                    if (err) throw err;
+                    var saleid = result[0]["SaleID"]
+                    console.log("Sale id")
+                    console.log(saleid) 
+
+                    
+                    res.send({
+                        status : "Logout",
+                        SaleID: saleid,
+                        CustomerID:customerid,
+                    })
+                })            
+            })
+
         }
         else{
             console.log("not pass")
-            res.send({status : "Login"})
+            res.send({
+                status : "Login",
+                SaleID:0,
+                CustomerID:0
+            })
 
         }
     });
-
-    // var status_login = {
-    //     status: "login success"
-    // }
-    // res.send(status_login)
 
 })
 
@@ -180,8 +221,47 @@ app.post('/menu',async(req,res)=>{
         res.send(returnResult)
      })
 })
+var x = 0;
+app.post('/buyls',(req,res)=>{
+    var data_buy = {
+        SaleID : req.body.SaleID,
+        ProductID : req.body.ProductID,
+        Price : req.body.Price
+    }
+  
+    var sql2 = "INSERT INTO sale_details (SaleID,ProductID,Price) VALUES ("+data_buy.SaleID+","+data_buy.ProductID+","+data_buy.Price+")"
+    db.query(sql2,function (err, result) {
+        if (err) throw err;
+        console.log("insert 1 order to db")
+        res.send({
+            buy : "pass"
+        })
+    
+    })
 
 
+
+    x = x+1
+    console.log("post method buy saleid = "+data_buy.SaleID+"productid = "+data_buy.ProductID+" price = "+data_buy.Price+":::"+x)
+})
+
+//update now
+
+// app.post('/bill',(req,res)=>{
+//     var data_bill = {
+        
+//     }
+
+//     var sql = "SELECT * FROM products";
+//     db.query(sql,async function (err, result) {
+//         if (err) throw err;
+//         console.log("have access menu");
+ 
+//         var returnResult = JSON.stringify(result)
+//         console.log(returnResult)
+//         res.send(returnResult)
+//      })
+// })
 
 
 
