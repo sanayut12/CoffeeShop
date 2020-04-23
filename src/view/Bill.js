@@ -24,7 +24,7 @@ export default class Bill extends Component {
             })
 
             var body = {
-                CustomerID: this.state.SaleID
+                SaleID: this.state.SaleID
                 }
             fetch(url_api+'bill',{
                 method: 'POST',

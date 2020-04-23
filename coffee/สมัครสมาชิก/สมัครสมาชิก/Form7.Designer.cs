@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox_url = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -138,6 +139,18 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "URL";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(229, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(233, 57);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "เพิ่มเมนูสินค้า";
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -145,6 +158,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 670);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox_url);
             this.Controls.Add(this.button1);
@@ -174,5 +188,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox_url;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

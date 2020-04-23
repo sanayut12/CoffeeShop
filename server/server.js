@@ -250,13 +250,13 @@ app.post('/buyls',(req,res)=>{
 
 app.post('/bill',(req,res)=>{
     let data_bill = {
-        CustomerID: req.body.CustomerID
+        SaleID : req.body.SaleID
     }
+    console.log("access bill menu 1 user")
+    console.log(data_bill.SaleID)
 
-    console.log(data_bill.CustomerID)
 
-
-    var sql = "SELECT * FROM sale_details WHERE SaleID = "+data_bill.CustomerID+"";
+    var sql = "SELECT * FROM sale_details WHERE SaleID = "+data_bill.SaleID+"";
     db.query(sql,async function (err, result) {
         if (err) throw err;
         console.log("have access menu");

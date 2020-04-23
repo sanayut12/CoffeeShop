@@ -5,6 +5,13 @@ export default class Promotion extends Component {
         return (
             <div>
                 Promotion page
+
+                <div>
+                    <hi>
+                        รอการอัพเดดระบบ
+                    </hi>
+                </div>
+                
             </div>
         )
     }
