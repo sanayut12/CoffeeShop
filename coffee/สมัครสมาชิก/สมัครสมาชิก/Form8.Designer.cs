@@ -39,7 +39,7 @@
             this.label_id = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_level = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,7 +104,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(393, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(924, 12);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 62);
             this.pictureBox5.TabIndex = 9;
@@ -123,6 +123,7 @@
             // 
             // panel_home
             // 
+            this.panel_home.BackColor = System.Drawing.Color.Transparent;
             this.panel_home.Location = new System.Drawing.Point(21, 100);
             this.panel_home.Name = "panel_home";
             this.panel_home.Size = new System.Drawing.Size(1440, 670);
@@ -134,9 +135,9 @@
             this.label_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_id.Location = new System.Drawing.Point(1211, 14);
             this.label_id.Name = "label_id";
-            this.label_id.Size = new System.Drawing.Size(70, 25);
+            this.label_id.Size = new System.Drawing.Size(60, 25);
             this.label_id.TabIndex = 13;
-            this.label_id.Text = "label1";
+            this.label_id.Text = "none";
             // 
             // label1
             // 
@@ -152,21 +153,21 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1159, 63);
+            this.label2.Location = new System.Drawing.Point(1083, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 25);
+            this.label2.Size = new System.Drawing.Size(122, 25);
             this.label2.TabIndex = 16;
-            this.label2.Text = "ID :";
+            this.label2.Text = "StaffLevel :";
             // 
-            // label3
+            // label_level
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1211, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "label1";
+            this.label_level.AutoSize = true;
+            this.label_level.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_level.Location = new System.Drawing.Point(1211, 51);
+            this.label_level.Name = "label_level";
+            this.label_level.Size = new System.Drawing.Size(60, 25);
+            this.label_level.TabIndex = 15;
+            this.label_level.Text = "none";
             // 
             // pictureBox6
             // 
@@ -200,7 +201,7 @@
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_level);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_id);
             this.Controls.Add(this.panel_home);
@@ -239,7 +240,7 @@
         private System.Windows.Forms.Label label_id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_level;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox8;
     }

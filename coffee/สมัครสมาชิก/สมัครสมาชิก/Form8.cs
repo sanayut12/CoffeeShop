@@ -12,10 +12,11 @@ namespace สมัครสมาชิก
 {
     public partial class Form8 : Form
     {
-        public Form8(string id)
+        public Form8(string ID,string Level)
         {
             InitializeComponent();
-            label_id.Text = id;
+            label_id.Text = ID;
+            label_level.Text = Level;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

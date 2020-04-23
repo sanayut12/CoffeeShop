@@ -23,9 +23,6 @@ C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาช
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csprojAssemblyReference.cache
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form1.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form2.resources
-C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form3.resources
-C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form4.resources
-C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form5.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form6.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Properties.Resources.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csproj.GenerateResource.cache
@@ -74,3 +71,8 @@ C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครส�
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\MySql.Data.xml
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\MySql.Web.xml
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.csproj.CopyComplete
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form10.resources
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form11.resources
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form12.resources
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form7.resources
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form8.resources

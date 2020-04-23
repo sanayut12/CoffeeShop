@@ -55,7 +55,10 @@ class App extends Component{
           </div>       
         <div >
           <Jumbotron className = 'Jumbotron'>
-              <h1><Badge>Coffee Home </Badge></h1>
+            <h1>
+            <h1><Badge>Coffee Time </Badge></h1>
+            </h1>
+              
               <p> <center><h3 className="h3">บริการสั่งอาหารแบบ online</h3></center>  </p>
           </Jumbotron>
         </div>

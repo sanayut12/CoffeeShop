@@ -57,7 +57,7 @@ namespace สมัครสมาชิก
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string loginQuery = "SELECT StaffID,StaffName , StaffPassword FROM staffs WHERE StaffName ='" + textBox_name.Text + "'AND StaffPassword = '" + textBox_pass.Text + "'";
+            string loginQuery = "SELECT StaffID,StaffName,StaffPassword,StaffLevel FROM staffs WHERE StaffName ='" + textBox_name.Text + "'AND StaffPassword = '" + textBox_pass.Text + "'";
             connection.Open();
             command = new MySqlCommand(loginQuery, connection);
             MySqlDataReader reader = command.ExecuteReader();
@@ -66,10 +66,13 @@ namespace สมัครสมาชิก
             while (reader.Read())
             {
                 if (reader.GetString("StaffName") == textBox_name.Text && reader.GetString("StaffPassword") == textBox_pass.Text)
-                {                    
+                {
+                    string ID = reader.GetString("StaffID");
+                    string Level = reader.GetString("StaffLevel");
+
                     MessageBox.Show(" correct");
                     x = 1;
-                    Form8 f8 = new Form8(reader.GetString("StaffID"));
+                    Form8 f8 = new Form8(ID,Level);
                     f8.Show();
                     this.Hide();
                 }
