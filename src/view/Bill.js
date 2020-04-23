@@ -1,32 +1,61 @@
 import React, { Component } from 'react'
 import {Table} from 'react-bootstrap'
-
-const url_api = "https://59135ca0.ngrok.io/";
+import Swal from 'sweetalert2'
+const url_api = "https://eed0a7d1.ngrok.io/";
 
 
 export default class Bill extends Component {
 
     state = {
         SaleID:0,
-        CustomerID:0
+        CustomerID:0,
+        MenuBill:[]
       }
 
-    componentDidMount(){
-        this.setState({
+    constructor(){
+        super()
+
+    }
+
+    async componentDidMount(){
+       await this.setState({
             SaleID: this.props.SaleID,
             CustomerID : this.props.CustomerID
-        })
+            })
 
-        // fetch(url_api+'bill',{
-        //     method: 'POST',
-        //     body: JSON.stringify(body),
-        //     headers: { 'Content-Type': 'application/json' },
-        // })
-        // .then(res => res.json())
-        // .then(json => Swal.fire("Buyed"));
+            var body = {
+                CustomerID: this.state.SaleID
+                }
+            fetch(url_api+'bill',{
+                method: 'POST',
+                body: JSON.stringify(body),
+                headers: { 'Content-Type': 'application/json' },
+            }).then(res => res.json())
+            .then(json =>this.setState({MenuBill:json}));
+
+
+
+
+
     }
 
     render() {
+        var total = 0
+        var items = []
+        for (var i = 0;i < this.state.MenuBill.length;i++)
+        {
+            total = total + this.state.MenuBill[i]["Price"]
+            items.push(
+                <tbody>
+                    <tr>
+                        <th scope="row">{i+1}</th>
+                        <td>{this.state.MenuBill[i]["ProductName"]}</td>
+                        <td>{this.state.MenuBill[i]["Price"]}</td>
+                    </tr>
+                </tbody>
+            )
+            
+        }
         return (
             <div>
                 <h1>
@@ -44,39 +73,20 @@ export default class Bill extends Component {
                             <th>Price</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            </tr>
-                        </tbody>
-                    </Table>
-                </div>
-                <div>
-                    <Table>
+                        {items}
+
                         <thead>
                             <tr>
-                            <th>#</th>
+                            <th></th>
                             <th></th>
                             <th>amont</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
+                            <th scope="row">total</th>
+                            <td></td>
+                            <td>{total + " ฿"}</td>
                             </tr>
                         </tbody>
                     </Table>

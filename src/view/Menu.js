@@ -4,7 +4,7 @@ import { Jumbotron, Container,Badge ,Button,ButtonGroup,Card, CardImg, CardText,
 import Swal from 'sweetalert2';
 import './Menu.css'
 
-const url_api = "https://59135ca0.ngrok.io/";
+const url_api = "https://eed0a7d1.ngrok.io/";
 
 export default class Menu extends Component {
 
@@ -35,12 +35,13 @@ export default class Menu extends Component {
 
     }
 // 
-    onClick = (SaleID,ProductID,Price) => {
+    onClick = (SaleID,ProductName,ProductID,Price) => {
 
         var body = {
             SaleID : SaleID,
+            ProductName : ProductName,
             ProductID : ProductID,
-            Price : Price
+            Price : Price            
         }
 
         fetch(url_api+'buyls',{
@@ -57,6 +58,7 @@ export default class Menu extends Component {
         var items =[]
         for(var i = 0 ; i< this.state.resultmenu.length;i++){
             let saleid = this.state.SaleID
+            let productname = this.state.resultmenu[i]["ProductName"]
             let productid = this.state.resultmenu[i]["ProductID"]
             let price = this.state.resultmenu[i]["Price"]
 
@@ -74,7 +76,7 @@ export default class Menu extends Component {
                         <CardText>{"Type : "+this.state.resultmenu[i]["Type"]}</CardText>
                         <CardText>{"Cost : "+ this.state.resultmenu[i]["Price"] +" ฿"}</CardText>
                       {/* this.state.SaleID,this.state.resultmenu[i]["ProductID"],this.state.resultmenu[i]["Price"] */}
-                        <Button className = "fontb" onClick={() => this.onClick(saleid,productid,price)} >Buy</Button>
+                        <Button className = "fontb" onClick={() => this.onClick(saleid,productname,productid,price)} >Buy</Button>
                         </CardBody>
                     </Card>             
                 </div>

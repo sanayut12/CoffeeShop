@@ -225,11 +225,12 @@ var x = 0;
 app.post('/buyls',(req,res)=>{
     var data_buy = {
         SaleID : req.body.SaleID,
+        ProductName : req.body.ProductName,
         ProductID : req.body.ProductID,
         Price : req.body.Price
     }
   
-    var sql2 = "INSERT INTO sale_details (SaleID,ProductID,Price) VALUES ("+data_buy.SaleID+","+data_buy.ProductID+","+data_buy.Price+")"
+    var sql2 = "INSERT INTO sale_details (SaleID,ProductName,ProductID,Price) VALUES ("+data_buy.SaleID+",'"+data_buy.ProductName+"',"+data_buy.ProductID+","+data_buy.Price+")"
     db.query(sql2,function (err, result) {
         if (err) throw err;
         console.log("insert 1 order to db")
@@ -245,23 +246,25 @@ app.post('/buyls',(req,res)=>{
     console.log("post method buy saleid = "+data_buy.SaleID+"productid = "+data_buy.ProductID+" price = "+data_buy.Price+":::"+x)
 })
 
-//update now
 
-// app.post('/bill',(req,res)=>{
-//     var data_bill = {
-        
-//     }
 
-//     var sql = "SELECT * FROM products";
-//     db.query(sql,async function (err, result) {
-//         if (err) throw err;
-//         console.log("have access menu");
- 
-//         var returnResult = JSON.stringify(result)
-//         console.log(returnResult)
-//         res.send(returnResult)
-//      })
-// })
+app.post('/bill',(req,res)=>{
+    let data_bill = {
+        CustomerID: req.body.CustomerID
+    }
+
+    console.log(data_bill.CustomerID)
+
+
+    var sql = "SELECT * FROM sale_details WHERE SaleID = "+data_bill.CustomerID+"";
+    db.query(sql,async function (err, result) {
+        if (err) throw err;
+        console.log("have access menu");
+        console.log(result)
+        res.send(result)
+     })
+
+})
 
 
 
