@@ -68,6 +68,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(683, 14);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 62);
@@ -124,6 +125,7 @@
             // panel_home
             // 
             this.panel_home.BackColor = System.Drawing.Color.Transparent;
+            this.panel_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel_home.Location = new System.Drawing.Point(21, 100);
             this.panel_home.Name = "panel_home";
             this.panel_home.Size = new System.Drawing.Size(1440, 670);
