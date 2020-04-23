@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace สมัครสมาชิก
 {
-    public partial class Form6 : Form
+    public partial class Form4 : Form
     {
-        public Form6()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

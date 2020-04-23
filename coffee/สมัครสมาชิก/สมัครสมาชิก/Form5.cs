@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace สมัครสมาชิก
 {
-    public partial class Form6 : Form
+    public partial class Form5 : Form
     {
-        public Form6()
+        public Form5()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
