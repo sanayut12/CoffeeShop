@@ -143,11 +143,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("DilleniaUPC", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(229, 9);
+            this.label5.Location = new System.Drawing.Point(651, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 57);
+            this.label5.Size = new System.Drawing.Size(196, 63);
             this.label5.TabIndex = 28;
             this.label5.Text = "เพิ่มเมนูสินค้า";
             // 

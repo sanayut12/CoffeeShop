@@ -29,30 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.listView_menu = new System.Windows.Forms.ListView();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listView1
+            // listView_menu
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(80, 89);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1306, 355);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView_menu.HideSelection = false;
+            this.listView_menu.Location = new System.Drawing.Point(44, 89);
+            this.listView_menu.Name = "listView_menu";
+            this.listView_menu.Size = new System.Drawing.Size(1358, 550);
+            this.listView_menu.TabIndex = 0;
+            this.listView_menu.UseCompatibleStateImageBehavior = false;
             // 
-            // pictureBox3
+            // label1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(1354, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 55);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(548, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(312, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "รายการอาหารของทางร้าน";
             // 
             // Form10
             // 
@@ -61,19 +59,19 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 670);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listView_menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form10";
             this.Text = "Form10";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ListView listView_menu;
+        private System.Windows.Forms.Label label1;
     }
 }
