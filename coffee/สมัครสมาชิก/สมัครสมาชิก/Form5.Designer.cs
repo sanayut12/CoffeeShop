@@ -50,7 +50,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(613, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 71);
+            this.label5.Size = new System.Drawing.Size(182, 70);
             this.label5.TabIndex = 32;
             this.label5.Text = "Check Bill";
             // 
@@ -66,7 +66,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form5";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "Form5";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
