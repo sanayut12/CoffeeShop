@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.label5 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listView_bill = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // label5
@@ -41,19 +41,19 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(631, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 71);
+            this.label5.Size = new System.Drawing.Size(80, 70);
             this.label5.TabIndex = 30;
             this.label5.Text = "Bill";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // listView1
+            // listView_bill
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(58, 95);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1333, 540);
-            this.listView1.TabIndex = 31;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView_bill.HideSelection = false;
+            this.listView_bill.Location = new System.Drawing.Point(58, 95);
+            this.listView_bill.Name = "listView_bill";
+            this.listView_bill.Size = new System.Drawing.Size(1333, 540);
+            this.listView_bill.TabIndex = 31;
+            this.listView_bill.UseCompatibleStateImageBehavior = false;
             // 
             // Form3
             // 
@@ -62,11 +62,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 670);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listView_bill);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -75,6 +76,6 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listView_bill;
     }
 }

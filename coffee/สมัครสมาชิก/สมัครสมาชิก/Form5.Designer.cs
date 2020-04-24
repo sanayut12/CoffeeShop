@@ -29,18 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
-            this.listView1 = new System.Windows.Forms.ListView();
             this.label5 = new System.Windows.Forms.Label();
+            this.listView_checkbill = new System.Windows.Forms.ListView();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(59, 94);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1333, 540);
-            this.listView1.TabIndex = 31;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label5
             // 
@@ -54,6 +45,15 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Check Bill";
             // 
+            // listView_checkbill
+            // 
+            this.listView_checkbill.HideSelection = false;
+            this.listView_checkbill.Location = new System.Drawing.Point(32, 87);
+            this.listView_checkbill.Name = "listView_checkbill";
+            this.listView_checkbill.Size = new System.Drawing.Size(1333, 540);
+            this.listView_checkbill.TabIndex = 33;
+            this.listView_checkbill.UseCompatibleStateImageBehavior = false;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -61,20 +61,20 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 670);
+            this.Controls.Add(this.listView_checkbill);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form5";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListView listView_checkbill;
     }
 }

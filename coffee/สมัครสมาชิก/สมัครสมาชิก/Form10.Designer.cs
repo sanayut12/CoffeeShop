@@ -41,6 +41,7 @@
             this.listView_menu.Size = new System.Drawing.Size(1358, 550);
             this.listView_menu.TabIndex = 0;
             this.listView_menu.UseCompatibleStateImageBehavior = false;
+            this.listView_menu.Click += new System.EventHandler(this.listView_menu_Click);
             // 
             // label1
             // 
@@ -64,6 +65,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form10";
             this.Text = "Form10";
+            this.Load += new System.EventHandler(this.Form10_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
