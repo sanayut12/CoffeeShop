@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.image_box = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_status = new System.Windows.Forms.ComboBox();
@@ -41,13 +42,15 @@
             this.comboBox_type = new System.Windows.Forms.ComboBox();
             this.textBox_url = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.image_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // image_box
             // 
             this.image_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.image_box.Location = new System.Drawing.Point(107, 49);
+            this.image_box.Location = new System.Drawing.Point(111, 49);
             this.image_box.Name = "image_box";
             this.image_box.Size = new System.Drawing.Size(277, 257);
             this.image_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -57,6 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(33, 601);
             this.label1.Name = "label1";
@@ -66,19 +70,20 @@
             // 
             // comboBox_status
             // 
-            this.comboBox_status.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_status.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_status.FormattingEnabled = true;
             this.comboBox_status.Items.AddRange(new object[] {
             "Enable",
             "Disenable"});
             this.comboBox_status.Location = new System.Drawing.Point(159, 601);
             this.comboBox_status.Name = "comboBox_status";
-            this.comboBox_status.Size = new System.Drawing.Size(305, 47);
+            this.comboBox_status.Size = new System.Drawing.Size(305, 48);
             this.comboBox_status.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(33, 405);
             this.label2.Name = "label2";
@@ -98,6 +103,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(27, 472);
             this.label3.Name = "label3";
@@ -109,7 +115,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(33, 534);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 40);
@@ -126,27 +134,29 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(80, 690);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 50);
             this.button1.TabIndex = 9;
             this.button1.Text = "แก้ไขสินค้า";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button2.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(257, 690);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 50);
+            this.button2.Size = new System.Drawing.Size(156, 50);
             this.button2.TabIndex = 10;
-            this.button2.Text = "อัพเดดข้อมูล";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "อัพเดทข้อมูล";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // comboBox_type
             // 
-            this.comboBox_type.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_type.Font = new System.Drawing.Font("KodchiangUPC", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_type.FormattingEnabled = true;
             this.comboBox_type.Items.AddRange(new object[] {
             "ร้อน",
@@ -155,7 +165,7 @@
             "ขนม"});
             this.comboBox_type.Location = new System.Drawing.Point(159, 472);
             this.comboBox_type.Name = "comboBox_type";
-            this.comboBox_type.Size = new System.Drawing.Size(305, 47);
+            this.comboBox_type.Size = new System.Drawing.Size(305, 45);
             this.comboBox_type.TabIndex = 11;
             // 
             // textBox_url
@@ -169,6 +179,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(33, 341);
             this.label5.Name = "label5";
@@ -176,11 +187,25 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "URL";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(443, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 40);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(500, 775);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_url);
             this.Controls.Add(this.comboBox_type);
@@ -199,6 +224,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form6";
             ((System.ComponentModel.ISupportInitialize)(this.image_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +245,6 @@
         private System.Windows.Forms.ComboBox comboBox_type;
         private System.Windows.Forms.TextBox textBox_url;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

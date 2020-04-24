@@ -79,3 +79,6 @@ C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาช
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form3.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form4.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form5.resources
+C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form3.resources
+C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form4.resources
+C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form5.resources

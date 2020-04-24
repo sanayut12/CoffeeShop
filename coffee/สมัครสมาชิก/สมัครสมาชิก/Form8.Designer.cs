@@ -85,7 +85,7 @@
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Location = new System.Drawing.Point(90, 14);
+            this.pictureBox7.Location = new System.Drawing.Point(98, 14);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(60, 60);
@@ -140,40 +140,45 @@
             // label_id
             // 
             this.label_id.AutoSize = true;
-            this.label_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_id.Location = new System.Drawing.Point(1211, 14);
+            this.label_id.BackColor = System.Drawing.Color.Transparent;
+            this.label_id.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_id.Location = new System.Drawing.Point(1209, 9);
             this.label_id.Name = "label_id";
-            this.label_id.Size = new System.Drawing.Size(60, 25);
+            this.label_id.Size = new System.Drawing.Size(68, 44);
             this.label_id.TabIndex = 13;
             this.label_id.Text = "none";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1159, 14);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1158, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 25);
+            this.label1.Size = new System.Drawing.Size(55, 44);
             this.label1.TabIndex = 14;
             this.label1.Text = "ID :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(1083, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 25);
+            this.label2.Size = new System.Drawing.Size(132, 44);
             this.label2.TabIndex = 16;
             this.label2.Text = "StaffLevel :";
             // 
             // label_level
             // 
             this.label_level.AutoSize = true;
-            this.label_level.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_level.Location = new System.Drawing.Point(1211, 51);
+            this.label_level.BackColor = System.Drawing.Color.Transparent;
+            this.label_level.Font = new System.Drawing.Font("DilleniaUPC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_level.ForeColor = System.Drawing.Color.Black;
+            this.label_level.Location = new System.Drawing.Point(1211, 45);
             this.label_level.Name = "label_level";
-            this.label_level.Size = new System.Drawing.Size(60, 25);
+            this.label_level.Size = new System.Drawing.Size(74, 50);
             this.label_level.TabIndex = 15;
             this.label_level.Text = "none";
             // 
@@ -182,9 +187,9 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(768, 14);
+            this.pictureBox6.Location = new System.Drawing.Point(755, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -194,7 +199,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(351, 12);
+            this.pictureBox8.Location = new System.Drawing.Point(345, 12);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(63, 62);
             this.pictureBox8.TabIndex = 18;
