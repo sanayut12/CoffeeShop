@@ -93,7 +93,7 @@
             "ร้อน",
             "เย็น",
             "ปั่น",
-            "ขนม"});
+            "ของหวาน"});
             this.comboBox_type.Location = new System.Drawing.Point(418, 313);
             this.comboBox_type.Name = "comboBox_type";
             this.comboBox_type.Size = new System.Drawing.Size(714, 60);

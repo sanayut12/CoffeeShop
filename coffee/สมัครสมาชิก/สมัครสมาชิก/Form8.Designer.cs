@@ -110,7 +110,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(924, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(853, 14);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 62);
             this.pictureBox5.TabIndex = 9;
@@ -142,9 +142,9 @@
             this.label_id.AutoSize = true;
             this.label_id.BackColor = System.Drawing.Color.Transparent;
             this.label_id.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_id.Location = new System.Drawing.Point(1209, 9);
+            this.label_id.Location = new System.Drawing.Point(1062, 9);
             this.label_id.Name = "label_id";
-            this.label_id.Size = new System.Drawing.Size(68, 44);
+            this.label_id.Size = new System.Drawing.Size(65, 43);
             this.label_id.TabIndex = 13;
             this.label_id.Text = "none";
             // 
@@ -153,9 +153,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1158, 11);
+            this.label1.Location = new System.Drawing.Point(1003, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 44);
+            this.label1.Size = new System.Drawing.Size(53, 43);
             this.label1.TabIndex = 14;
             this.label1.Text = "ID :";
             // 
@@ -164,9 +164,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1083, 51);
+            this.label2.Location = new System.Drawing.Point(936, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 44);
+            this.label2.Size = new System.Drawing.Size(121, 43);
             this.label2.TabIndex = 16;
             this.label2.Text = "StaffLevel :";
             // 
@@ -174,11 +174,11 @@
             // 
             this.label_level.AutoSize = true;
             this.label_level.BackColor = System.Drawing.Color.Transparent;
-            this.label_level.Font = new System.Drawing.Font("DilleniaUPC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_level.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_level.ForeColor = System.Drawing.Color.Black;
-            this.label_level.Location = new System.Drawing.Point(1211, 45);
+            this.label_level.Location = new System.Drawing.Point(1064, 45);
             this.label_level.Name = "label_level";
-            this.label_level.Size = new System.Drawing.Size(74, 50);
+            this.label_level.Size = new System.Drawing.Size(68, 44);
             this.label_level.TabIndex = 15;
             this.label_level.Text = "none";
             // 
@@ -187,9 +187,9 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(755, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(755, 10);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox6.Size = new System.Drawing.Size(80, 72);
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -199,7 +199,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(345, 12);
+            this.pictureBox8.Location = new System.Drawing.Point(337, 11);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(63, 62);
             this.pictureBox8.TabIndex = 18;
@@ -211,7 +211,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(259, 14);
+            this.pictureBox9.Location = new System.Drawing.Point(254, 13);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(63, 62);
             this.pictureBox9.TabIndex = 19;
