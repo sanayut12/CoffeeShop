@@ -34,8 +34,6 @@ namespace สมัครสมาชิก
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int id = 1;
-
             connection.Open();
 
             string insertQuery = "INSERT INTO staffs(StaffName,Gender,StaffPassword,StaffLevel) VALUE(@StaffName,@Gender,@StaffPassword,@StaffLevel)";

@@ -16,10 +16,11 @@ namespace สมัครสมาชิก
                 // connect Database 
         MySqlConnection connection = new MySqlConnection("host=localhost;user=root;password=12345678;database=final");
         MySqlCommand command;
-        public Form5()
+        public Form5(string staffid)
         {
             InitializeComponent();
             AddColunm();
+            label_staffid.Text = staffid;
         }
         private void AddColunm()
         {
@@ -51,6 +52,27 @@ namespace สมัครสมาชิก
                 AddData(reader.GetString("BillCode"), reader.GetString("CustomerName"), reader.GetString("SaleDateTime"), reader.GetString("Total"), reader.GetString("No_table"));
             }
             connection.Close();
+        }
+
+        private void listView_checkbill_Click(object sender, EventArgs e)
+        {
+            string ids = listView_checkbill.SelectedItems[0].SubItems[0].Text;
+            int id = int.Parse(ids);
+            string st = label_staffid.Text;
+            int staffid = int.Parse(st);
+  
+
+            string QueryCheckBill = "UPDATE sales SET StaffID = "+staffid+ ",CheckBill = 'StaffCheck' WHERE SaleID = "+id;
+            connection.Open();
+            command = new MySqlCommand(QueryCheckBill, connection);
+            MySqlDataReader reader = command.ExecuteReader();
+
+
+            connection.Close();
+            MessageBox.Show("Check Bill Code = " + id + "  StaffID = " + staffid);
+
+
+
         }
     }
 }
