@@ -90,5 +90,27 @@ namespace สมัครสมาชิก
             Form7 f7 = new Form7();
             f7.Show();*/
         }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked )
+            {
+                textBox_pass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox_pass.UseSystemPasswordChar= true;
+            }
+        }
     }
 }

@@ -63,5 +63,10 @@ namespace สมัครสมาชิก
             Form6 f6 = new Form6(ids);
             f6.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
