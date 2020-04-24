@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Table} from 'react-bootstrap'
+import {Table,Button} from 'react-bootstrap'
 import Swal from 'sweetalert2'
 const url_api = "https://c83174d1.ngrok.io/";
 
@@ -32,12 +32,22 @@ export default class Bill extends Component {
                 headers: { 'Content-Type': 'application/json' },
             }).then(res => res.json())
             .then(json =>this.setState({MenuBill:json}));
-
-
-
-
-
     }
+
+
+    onCheckBill =()=>{
+        let body = {
+            SaleID : this.state.SaleID
+        }
+
+        fetch(url_api+'checkbill',{
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: { 'Content-Type': 'application/json' },
+        })
+        .then(res => res.json())
+        .then(json => Swal.fire("Check Bill"));
+    } 
 
     render() {
         var total = 0
@@ -90,6 +100,9 @@ export default class Bill extends Component {
                             </tr>
                         </tbody>
                     </Table>
+                </div>
+                <div>
+                    <Button onClick = {this.onCheckBill}><h3>Check Bill</h3> </Button>
                 </div>
             </div>
         )
