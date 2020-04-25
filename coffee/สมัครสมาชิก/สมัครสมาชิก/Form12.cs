@@ -16,5 +16,20 @@ namespace สมัครสมาชิก
         {
             InitializeComponent();
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form12_Load(object sender, EventArgs e)
+        {
+            for(int i=0; i < 10; i++)
+            {
+                chartSalary.Series["Salary"].Points.AddXY("A", 3000);
+            }
+
+            
+        }
     }
 }

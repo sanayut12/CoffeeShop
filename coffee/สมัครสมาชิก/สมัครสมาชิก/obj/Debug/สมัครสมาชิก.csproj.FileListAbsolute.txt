@@ -84,3 +84,12 @@ C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครส�
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form5.resources
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form9.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form9.resources
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.dll
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.pdb
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.xml
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.Wpf.xml
