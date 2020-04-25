@@ -67,8 +67,10 @@ namespace สมัครสมาชิก
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             panel_home.Controls.Clear();
+
+            string staffid = label_id.Text;
             //check bill
-            Form5 f5 = new Form5();
+            Form5 f5 = new Form5(staffid);
             f5.TopLevel = false;
             panel_home.Controls.Add(f5);
             f5.Show();

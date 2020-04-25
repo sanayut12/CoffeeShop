@@ -211,7 +211,7 @@ app.post('/login',async (req,res)=>{
 app.post('/menu',async(req,res)=>{
     console.log("menu access!")
 
-    var sql = "SELECT * FROM products";
+    var sql = "SELECT * FROM products WHERE Status = 'Enable'";
     db.query(sql,async function (err, result) {
         if (err) throw err;
         console.log("have access menu");
@@ -263,6 +263,28 @@ app.post('/bill',(req,res)=>{
         console.log(result)
         res.send(result)
      })
+})
+
+app.post('/checkbill',(req,res)=>{
+
+    let data_checkbill = {
+        SaleID : req.body.SaleID
+    }
+    console.log("access Check Bill menu 1 user")
+    console.log(data_checkbill.SaleID)
+
+
+    var sql = "UPDATE sales SET CheckBill = 'CustomerCheck'  WHERE SaleID = "+data_checkbill.SaleID+"";
+    db.query(sql,async function (err, result) {
+        if (err) throw err;
+        console.log("check bill success!");
+        
+        res.send({status:"pass"})
+    })
+        
+
+
+
 })
 
 
