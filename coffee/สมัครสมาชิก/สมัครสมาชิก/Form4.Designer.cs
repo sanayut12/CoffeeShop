@@ -41,9 +41,9 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(596, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(342, 70);
+            this.label5.Size = new System.Drawing.Size(354, 70);
             this.label5.TabIndex = 29;
-            this.label5.Text = "รายการสั่งสินค้า(Order)";
+            this.label5.Text = "รายการสั่งสินค้า (Order)";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // listView_order

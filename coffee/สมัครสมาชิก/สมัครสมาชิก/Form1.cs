@@ -112,5 +112,15 @@ namespace สมัครสมาชิก
                 textBox_pass.UseSystemPasswordChar= true;
             }
         }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Tan;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.White;
+        }
     }
 }
