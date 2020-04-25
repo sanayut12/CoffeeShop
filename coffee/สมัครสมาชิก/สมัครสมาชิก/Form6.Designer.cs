@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_cost = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox_type = new System.Windows.Forms.ComboBox();
             this.textBox_url = new System.Windows.Forms.TextBox();
@@ -132,17 +131,6 @@
             this.textBox_cost.Size = new System.Drawing.Size(305, 43);
             this.textBox_cost.TabIndex = 8;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(80, 690);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 50);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "แก้ไขสินค้า";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -153,10 +141,11 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "อัพเดทข้อมูล";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox_type
             // 
-            this.comboBox_type.Font = new System.Drawing.Font("KodchiangUPC", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_type.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_type.FormattingEnabled = true;
             this.comboBox_type.Items.AddRange(new object[] {
             "ร้อน",
@@ -165,7 +154,7 @@
             "ขนม"});
             this.comboBox_type.Location = new System.Drawing.Point(159, 472);
             this.comboBox_type.Name = "comboBox_type";
-            this.comboBox_type.Size = new System.Drawing.Size(305, 45);
+            this.comboBox_type.Size = new System.Drawing.Size(305, 51);
             this.comboBox_type.TabIndex = 11;
             // 
             // textBox_url
@@ -197,6 +186,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(45, 40);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form6
             // 
@@ -210,7 +200,6 @@
             this.Controls.Add(this.textBox_url);
             this.Controls.Add(this.comboBox_type);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_cost);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -222,7 +211,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form6";
+            this.Text = "For";
             ((System.ComponentModel.ISupportInitialize)(this.image_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -240,7 +229,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox_cost;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox_type;
         private System.Windows.Forms.TextBox textBox_url;

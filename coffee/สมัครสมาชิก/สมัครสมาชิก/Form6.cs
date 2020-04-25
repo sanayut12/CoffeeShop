@@ -23,6 +23,7 @@ namespace สมัครสมาชิก
             InitializeComponent();
             loadMenu(id);
 
+            this.Text = id.ToString();
         }
 
         private void loadMenu(int ids)
@@ -65,6 +66,30 @@ namespace สมัครสมาชิก
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int productID = int.Parse(this.Text);
+            string productName = textBox_name.Text;
+            string price = textBox_cost.Text;
+            string type = comboBox_type.Text;
+            string url = textBox_url.Text;
+            string status = comboBox_status.Text;
+
+            string QueryUpdateMenu = "UPDATE products SET ProductName = '"+productName+ "',Price = '"+price+ "',Type = '"+type+ "',Url='"+url+ "',Status = '"+status+ "'    WHERE ProductID = " + productID;
+            connection.Open();
+            command = new MySqlCommand(QueryUpdateMenu, connection);
+            MySqlDataReader reader = command.ExecuteReader();
+
+
+            connection.Close();
+            MessageBox.Show("Update ProductID = "+productID);
         }
     }
 }

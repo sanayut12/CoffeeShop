@@ -40,9 +40,9 @@ namespace สมัครสมาชิก
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            string QueryBill = "SELECT DISTINCT sales.SaleID AS BillCode ,CustomerName,SaleDateTime,SUM(Price) AS Total ,No_table";
-            string QueryBill1 = QueryBill + " FROM customers NATURAL JOIN sales,sale_details";
-            string QueryBill2 = QueryBill1 + " WHERE sales.SaleID = sale_details.SaleID GROUP BY BillCode;";
+            string QueryBill = "SELECT sale_details.SaleID AS BillCode ,CustomerName,SaleDateTime,SUM(Price) AS Total ,No_table";
+            string QueryBill1 = QueryBill + " FROM customers NATURAL JOIN sales NATURAL JOIN sale_details";
+            string QueryBill2 = QueryBill1 + " WHERE CheckBill ='CustomerCheck' GROUP BY BillCode";
             connection.Open();
             command = new MySqlCommand(QueryBill2, connection);
             MySqlDataReader reader = command.ExecuteReader();
