@@ -1,6 +1,6 @@
 ﻿namespace สมัครสมาชิก
 {
-    partial class Form11
+    partial class Form9
     {
         /// <summary>
         /// Required designer variable.
@@ -36,22 +36,21 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("DilleniaUPC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(427, 20);
+            this.label1.Location = new System.Drawing.Point(494, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 50);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "สรุปยอดการขายรายเดือน";
+            this.label1.Size = new System.Drawing.Size(239, 50);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "สรุปยอดการขายรายวัน";
             // 
-            // Form11
+            // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 553);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form11";
-            this.Text = "Form11";
-            this.TopMost = true;
+            this.Name = "Form9";
+            this.Text = "Form9";
             this.ResumeLayout(false);
             this.PerformLayout();
 
