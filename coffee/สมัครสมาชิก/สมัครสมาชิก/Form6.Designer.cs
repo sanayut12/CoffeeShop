@@ -135,7 +135,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button2.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(257, 690);
+            this.button2.Location = new System.Drawing.Point(136, 685);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 50);
             this.button2.TabIndex = 10;
@@ -145,7 +145,7 @@
             // 
             // comboBox_type
             // 
-            this.comboBox_type.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_type.Font = new System.Drawing.Font("DilleniaUPC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_type.FormattingEnabled = true;
             this.comboBox_type.Items.AddRange(new object[] {
             "ร้อน",
@@ -154,7 +154,7 @@
             "ขนม"});
             this.comboBox_type.Location = new System.Drawing.Point(159, 472);
             this.comboBox_type.Name = "comboBox_type";
-            this.comboBox_type.Size = new System.Drawing.Size(305, 51);
+            this.comboBox_type.Size = new System.Drawing.Size(305, 48);
             this.comboBox_type.TabIndex = 11;
             // 
             // textBox_url
