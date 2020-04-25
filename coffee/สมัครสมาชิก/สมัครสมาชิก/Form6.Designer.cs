@@ -156,7 +156,7 @@
             // 
             // comboBox_type
             // 
-            this.comboBox_type.Font = new System.Drawing.Font("KodchiangUPC", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_type.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_type.FormattingEnabled = true;
             this.comboBox_type.Items.AddRange(new object[] {
             "ร้อน",
@@ -165,7 +165,7 @@
             "ขนม"});
             this.comboBox_type.Location = new System.Drawing.Point(159, 472);
             this.comboBox_type.Name = "comboBox_type";
-            this.comboBox_type.Size = new System.Drawing.Size(305, 45);
+            this.comboBox_type.Size = new System.Drawing.Size(305, 51);
             this.comboBox_type.TabIndex = 11;
             // 
             // textBox_url
