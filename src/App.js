@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Swal from 'sweetalert2';
@@ -9,7 +9,7 @@ import Profile from './view/Profile'
 import Register from './view/Register'
 import Login from './view/Login'
 
-import { Jumbotron, Container,Badge ,Button,ButtonGroup,Card, CardImg, CardText, CardBody, CardLink,
+import { Jumbotron,Badge ,Button,ButtonGroup,Card, CardImg, CardText, CardBody, CardLink,Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
   CardTitle, CardSubtitle} from 'reactstrap';
 import {Route,Link} from "react-router-dom";
 
@@ -38,10 +38,30 @@ class App extends Component{
 
   };
 
+
   render(){
+
     return (
       <div className="App">
-
+        <div>
+            <Navbar color="light" light expand="md">
+              <NavbarBrand href="/">Home</NavbarBrand>
+              <NavbarToggler onClick={this.toggle} />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                  <NavItem>
+                    <NavLink href="/users">Users</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/posts">Posts</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/chat">Chat</NavLink>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </div>
         <div> 
         <div>
             <ButtonGroup className="col2">
@@ -69,7 +89,7 @@ class App extends Component{
     StaffID:0,
     table:"",
     status: "Login" */}
-        <div>
+        {/* <div>
             <div>
               status = {this.state.status} CustomerId = {this.state.CustomerID} SaleID = {this.state.SaleID}
             </div>
@@ -77,7 +97,7 @@ class App extends Component{
             <div>
             Id = {this.state.CustomerID} 
             </div>
-        </div>   
+        </div>    */}
         </div>
         <div className = "images">           
           <Route path="/menu" component={()=>(<Menu SaleID={this.state.SaleID} CustomerID = {this.state.CustomerID}/>)}/>   
