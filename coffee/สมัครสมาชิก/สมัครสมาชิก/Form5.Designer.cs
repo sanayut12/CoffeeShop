@@ -59,7 +59,7 @@
             // label_staffid
             // 
             this.label_staffid.AutoSize = true;
-            this.label_staffid.Location = new System.Drawing.Point(902, 48);
+            this.label_staffid.Location = new System.Drawing.Point(1304, 48);
             this.label_staffid.Name = "label_staffid";
             this.label_staffid.Size = new System.Drawing.Size(50, 17);
             this.label_staffid.TabIndex = 34;

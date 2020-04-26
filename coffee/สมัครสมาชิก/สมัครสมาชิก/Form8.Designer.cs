@@ -41,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label_level = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,7 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +120,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(1289, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(1398, 14);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 62);
             this.pictureBox3.TabIndex = 10;
@@ -195,18 +193,6 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(337, 11);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(63, 62);
-            this.pictureBox8.TabIndex = 18;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
@@ -227,7 +213,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1482, 797);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_level);
@@ -251,7 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,7 +256,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_level;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

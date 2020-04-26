@@ -44,19 +44,19 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(1316, 60);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 66);
+            this.button2.Size = new System.Drawing.Size(112, 84);
             this.button2.TabIndex = 1;
-            this.button2.Text = "สรุปยอดการขายทั้งหมด";
+            this.button2.Text = "สรุปยอดการขาย   ทั้งหมด";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1316, 132);
+            this.button3.Location = new System.Drawing.Point(1316, 150);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(112, 66);
             this.button3.TabIndex = 2;
@@ -67,7 +67,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1316, 204);
+            this.button4.Location = new System.Drawing.Point(1316, 225);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 66);
             this.button4.TabIndex = 3;
