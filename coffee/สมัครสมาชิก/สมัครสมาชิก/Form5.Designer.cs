@@ -49,7 +49,7 @@
             // listView_checkbill
             // 
             this.listView_checkbill.HideSelection = false;
-            this.listView_checkbill.Location = new System.Drawing.Point(32, 87);
+            this.listView_checkbill.Location = new System.Drawing.Point(49, 87);
             this.listView_checkbill.Name = "listView_checkbill";
             this.listView_checkbill.Size = new System.Drawing.Size(1333, 540);
             this.listView_checkbill.TabIndex = 33;
@@ -59,7 +59,7 @@
             // label_staffid
             // 
             this.label_staffid.AutoSize = true;
-            this.label_staffid.Location = new System.Drawing.Point(902, 48);
+            this.label_staffid.Location = new System.Drawing.Point(1312, 48);
             this.label_staffid.Name = "label_staffid";
             this.label_staffid.Size = new System.Drawing.Size(50, 17);
             this.label_staffid.TabIndex = 34;
