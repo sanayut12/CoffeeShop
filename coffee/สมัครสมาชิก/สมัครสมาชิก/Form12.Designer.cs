@@ -28,44 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form12));
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.chartSalary = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSalary)).BeginInit();
+            this.panel_ref = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // panel_ref
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(75, 62);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1246, 553);
-            this.listView1.TabIndex = 13;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.panel_ref.Location = new System.Drawing.Point(10, 60);
+            this.panel_ref.Name = "panel_ref";
+            this.panel_ref.Size = new System.Drawing.Size(1300, 600);
+            this.panel_ref.TabIndex = 0;
             // 
-            // chartSalary
+            // button2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartSalary.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartSalary.Legends.Add(legend1);
-            this.chartSalary.Location = new System.Drawing.Point(142, 123);
-            this.chartSalary.Name = "chartSalary";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Salary";
-            this.chartSalary.Series.Add(series1);
-            this.chartSalary.Size = new System.Drawing.Size(417, 263);
-            this.chartSalary.TabIndex = 15;
-            this.chartSalary.Text = "chart1";
-            title1.Name = "Title1";
-            title1.Text = "Salary Chart";
-            this.chartSalary.Titles.Add(title1);
-            this.chartSalary.Click += new System.EventHandler(this.chart1_Click);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1316, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(112, 66);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "สรุปยอดการขายทั้งหมด";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1316, 132);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(112, 66);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "สรุปยอดการขายรายวัน";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(1316, 204);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(112, 66);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "สรุปยอดสินค้าขายดี";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form12
             // 
@@ -74,19 +82,23 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 670);
-            this.Controls.Add(this.chartSalary);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel_ref);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form12";
             this.Text = "Form12";
             this.Load += new System.EventHandler(this.Form12_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chartSalary)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSalary;
+
+        private System.Windows.Forms.Panel panel_ref;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
