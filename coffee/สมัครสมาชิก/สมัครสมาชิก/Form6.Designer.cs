@@ -49,7 +49,7 @@
             // image_box
             // 
             this.image_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.image_box.Location = new System.Drawing.Point(111, 49);
+            this.image_box.Location = new System.Drawing.Point(120, 49);
             this.image_box.Name = "image_box";
             this.image_box.Size = new System.Drawing.Size(277, 257);
             this.image_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,7 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(500, 775);
+            this.ClientSize = new System.Drawing.Size(510, 775);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_url);
