@@ -4,7 +4,7 @@ import { Jumbotron, Container,Badge ,Button,ButtonGroup,Card, CardImg, CardText,
 import Swal from 'sweetalert2';
 import './Menu.css'
 
-const url_api = "https://7d81b9a7.ngrok.io/";
+const url_api = "https://a4b6f17a.ngrok.io/";
 
 export default class Menu extends Component {
 
