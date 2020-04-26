@@ -115,6 +115,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(63, 62);
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox3
             // 
@@ -178,7 +179,7 @@
             this.label_level.ForeColor = System.Drawing.Color.Black;
             this.label_level.Location = new System.Drawing.Point(1064, 45);
             this.label_level.Name = "label_level";
-            this.label_level.Size = new System.Drawing.Size(68, 44);
+            this.label_level.Size = new System.Drawing.Size(65, 43);
             this.label_level.TabIndex = 15;
             this.label_level.Text = "none";
             // 

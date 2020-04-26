@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.label1 = new System.Windows.Forms.Label();
+            this.chart_menu = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_menu)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -36,21 +40,39 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("DilleniaUPC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(546, 21);
+            this.label1.Location = new System.Drawing.Point(10, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 50);
             this.label1.TabIndex = 5;
             this.label1.Text = "เมนูขายดี\r\n";
             // 
+            // chart_menu
+            // 
+            this.chart_menu.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart_menu.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_menu.Legends.Add(legend1);
+            this.chart_menu.Location = new System.Drawing.Point(10, 55);
+            this.chart_menu.Name = "chart_menu";
+            this.chart_menu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            this.chart_menu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.chart_menu.Size = new System.Drawing.Size(1278, 506);
+            this.chart_menu.TabIndex = 6;
+            this.chart_menu.Text = "chart1";
+            // 
             // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1246, 533);
+            this.ClientSize = new System.Drawing.Size(1300, 600);
+            this.Controls.Add(this.chart_menu);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form14";
             this.Text = "Form14";
+            this.Load += new System.EventHandler(this.Form14_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_menu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +81,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_menu;
     }
 }

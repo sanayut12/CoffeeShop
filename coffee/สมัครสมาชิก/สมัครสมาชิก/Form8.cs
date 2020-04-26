@@ -85,5 +85,16 @@ namespace สมัครสมาชิก
         {
             Application.Exit();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            panel_home.Controls.Clear();
+
+            Form12 f12 = new Form12();
+            f12.TopLevel = false;
+            panel_home.Controls.Add(f12);
+            f12.Show();
+
+        }
     }
 }
