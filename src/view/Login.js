@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText ,Container} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText ,Container,Alert} from 'reactstrap';
 import Swal from 'sweetalert2';
 
-const url_api = "https://7d81b9a7.ngrok.io/";
+const url_api = "https://a4b6f17a.ngrok.io/";
 
 export default class Login extends Component {
 
@@ -91,40 +91,43 @@ export default class Login extends Component {
                     <h2>Login page </h2>    
                     </div>
                     <div  >
-                    <Container className = "formbox" >
-                        <Form >
-                            <FormGroup>
-                                <Label for="exampleEmail">name</Label>
-                                <Input type="name" name="name" id="exampleEmail" placeholder="name" onChange={this.onNameChange}/>
-                            </FormGroup>
-                            <FormGroup>
-                                <Label for="examplePassword">Password</Label>
-                                <Input type="password" name="password" id="examplePassword" placeholder="password" onChange={this.onPasswordChange}/>
-                            </FormGroup>
-                            <FormGroup>
-                                <Label for="exampleSelect">table</Label>
-                                <Input type="select" name="select" id="exampleSelect" placeholder="password" onChange={this.onTableChange}>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                                <option>16</option>
-                                </Input>
-                            </FormGroup>
-                            <Button onClick={this.onLogin}>Login</Button>
-                        </Form>
-                    </Container>
+                    <Alert color = "secondary"> 
+                        <Container className = "formbox" >
+                            <Form >
+                                <FormGroup>
+                                    <Label for="exampleEmail">name</Label>
+                                    <Input type="name" name="name" id="exampleEmail" placeholder="name" onChange={this.onNameChange}/>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="examplePassword">Password</Label>
+                                    <Input type="password" name="password" id="examplePassword" placeholder="password" onChange={this.onPasswordChange}/>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="exampleSelect">table</Label>
+                                    <Input type="select" name="select" id="exampleSelect" placeholder="password" onChange={this.onTableChange}>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    </Input>
+                                </FormGroup>
+                                <Button onClick={this.onLogin}>Login</Button>
+                            </Form>
+                        </Container>
+                    </Alert>
+                   
                     </div>
                 </div>       
                 

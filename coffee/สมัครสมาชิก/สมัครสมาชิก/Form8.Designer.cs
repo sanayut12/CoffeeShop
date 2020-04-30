@@ -83,7 +83,7 @@
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Location = new System.Drawing.Point(98, 14);
+            this.pictureBox7.Location = new System.Drawing.Point(100, 14);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(60, 60);
@@ -96,7 +96,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(171, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(174, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(63, 62);
             this.pictureBox4.TabIndex = 8;
@@ -120,7 +120,11 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.pictureBox3.Location = new System.Drawing.Point(1398, 14);
+=======
+            this.pictureBox3.Location = new System.Drawing.Point(1380, 13);
+>>>>>>> 1bc50ca1d6dafeb8324c98da227ed7a672b036cf
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 62);
             this.pictureBox3.TabIndex = 10;
@@ -141,7 +145,7 @@
             this.label_id.AutoSize = true;
             this.label_id.BackColor = System.Drawing.Color.Transparent;
             this.label_id.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_id.Location = new System.Drawing.Point(1062, 9);
+            this.label_id.Location = new System.Drawing.Point(1226, 12);
             this.label_id.Name = "label_id";
             this.label_id.Size = new System.Drawing.Size(65, 43);
             this.label_id.TabIndex = 13;
@@ -152,7 +156,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1003, 12);
+            this.label1.Location = new System.Drawing.Point(1167, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 43);
             this.label1.TabIndex = 14;
@@ -163,7 +167,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(936, 51);
+            this.label2.Location = new System.Drawing.Point(1100, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 43);
             this.label2.TabIndex = 16;
@@ -175,7 +179,7 @@
             this.label_level.BackColor = System.Drawing.Color.Transparent;
             this.label_level.Font = new System.Drawing.Font("DilleniaUPC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_level.ForeColor = System.Drawing.Color.Black;
-            this.label_level.Location = new System.Drawing.Point(1064, 45);
+            this.label_level.Location = new System.Drawing.Point(1228, 48);
             this.label_level.Name = "label_level";
             this.label_level.Size = new System.Drawing.Size(65, 43);
             this.label_level.TabIndex = 15;
@@ -198,9 +202,9 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(254, 13);
+            this.pictureBox9.Location = new System.Drawing.Point(254, 10);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox9.Size = new System.Drawing.Size(67, 65);
             this.pictureBox9.TabIndex = 19;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);

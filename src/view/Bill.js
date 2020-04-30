@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Table,Button} from 'react-bootstrap'
 import Swal from 'sweetalert2'
-const url_api = "https://7d81b9a7.ngrok.io/";
+const url_api = "https://a4b6f17a.ngrok.io/";
 
 
 export default class Bill extends Component {

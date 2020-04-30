@@ -83,6 +83,11 @@ C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครส�
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form4.resources
 C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form5.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form9.resources
+<<<<<<< HEAD
+C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form13.resources
+C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form14.resources
+C:\Users\Ploii\Desktop\ptoject\coffeeTime\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form9.resources
+=======
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.dll
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.WinForms.dll
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.Wpf.dll
@@ -94,6 +99,10 @@ C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาช
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form13.resources
 C:\Users\ArtPC\Desktop\dev\project\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\obj\Debug\สมัครสมาชิก.Form14.resources
+<<<<<<< HEAD
+=======
+>>>>>>> 06e3facf0d687738638d79227acf1b1c2dcd5d6c
+>>>>>>> 1bc50ca1d6dafeb8324c98da227ed7a672b036cf
 C:\Users\Ploii\Desktop\New folder\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\สมัครสมาชิก.exe.config
 C:\Users\Ploii\Desktop\New folder\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\สมัครสมาชิก.exe
 C:\Users\Ploii\Desktop\New folder\CoffeeShop\coffee\สมัครสมาชิก\สมัครสมาชิก\bin\Debug\สมัครสมาชิก.pdb
